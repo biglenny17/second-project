@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MandyBlog</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body id = "body">
+<h1>Mandy's Devotion Site</h1>
+
+<%= form_tag "/devotion" do %>
+  <%= text_field_tag "account", "default info" %>
+  <%= submit_tag "Save" %>
+<% end %>
+
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  prayer_topic: MyString
+  bible_text: MyText
+  time: 1
+
+two:
+  prayer_topic: MyString
+  bible_text: MyText
+  time: 1

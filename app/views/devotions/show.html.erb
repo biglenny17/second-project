@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Prayer topic:</b>
+  <%= @devotion.prayer_topic %>
+</p>
+
+<p>
+  <b>Bible text:</b>
+  <%= @devotion.bible_text %>
+</p>
+
+<p>
+  <b>time:</b>
+  <%= @devotion.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_devotion_path(@devotion) %> |
+<%= link_to 'Back', devotions_path %>

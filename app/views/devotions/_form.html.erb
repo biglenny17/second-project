@@ -1,0 +1,29 @@
+<%= form_for(@devotion) do |f| %>
+  <% if @devotion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@devotion.errors.count, "error") %> prohibited this devotion from being saved:</h2>
+
+      <ul>
+      <% @devotion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :prayer_topic %><br />
+    <%= f.text_field :prayer_topic %>
+  </div>
+  <div class="field">
+    <%= f.label :bible_text %><br />
+    <%= f.text_area :bible_text %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.number_field :time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
